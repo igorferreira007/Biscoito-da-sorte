@@ -2,6 +2,7 @@ const imgCookie = document.querySelector("#imgCookie");
 const screen1 = document.querySelector(".screen1");
 const screen2 = document.querySelector(".screen2");
 const btnReset = document.querySelector("#btnReset");
+const audio = document.querySelector("#audio");
 
 const phrases = [
   "A vida trará coisas boas se tiver paciência.",
@@ -69,7 +70,7 @@ const phrases = [
 imgCookie.addEventListener("click", function () {
   const randomNumber = Math.round(Math.random() * (phrases.length - 1));
   handleResetClick();
-
+  audio.play();
   screen2.querySelector("p").innerHTML = phrases[randomNumber];
 });
 
