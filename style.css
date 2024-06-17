@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+button {
+  background: #ff9500;
+  border: none;
+  padding: 1.6rem;
+  border-radius: 0.4rem;
+  color: white;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d17a00;
+}
+
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(45deg, #190361 0%, #bb00ff 100%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  color: #34355b;
+
+  animation: bg-gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+main {
+  text-align: center;
+  background-color: white;
+  padding: 4.8rem 6.4rem;
+  width: min(42.8rem, 90%);
+  border-radius: 0.5rem;
+  box-shadow: 0 2rem 5rem 0px rgba(0, 0, 0, 0.8);
+  margin-top: -12rem;
+}
+
+.hide {
+  display: none;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.screen1 p {
+  font-family: "DM Sans";
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2.6rem;
+}
+
+.screen1 img:hover {
+  animation-name: vibrate-cookie;
+  animation-duration: 0.4s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  cursor: pointer;
+}
+
+.screen2 p {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 2.4rem;
+  color: #000;
+  background-color: #e4edf1;
+  padding: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0px rgba(85, 85, 85, 0.5);
+  margin-bottom: 6rem;
+
+  animation: phrase-animation 2s;
+}
+
+.screen2 img {
+  margin-bottom: 6rem;
+}
+
+@keyframes vibrate-cookie {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  30% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, -2px);
+  }
+  70% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  90% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes phrase-animation {
+  0% {
+    transform: translateY(19rem) scale(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bg-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
