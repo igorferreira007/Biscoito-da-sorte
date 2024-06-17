@@ -34,13 +34,15 @@ body {
 
   animation: bg-gradient 10s ease infinite;
   background-size: 200% 200%;
+  padding-inline: 1.6rem;
 }
 
 main {
   text-align: center;
   background-color: white;
   padding: 4.8rem 6.4rem;
-  width: min(42.8rem, 90%);
+  /* width: min(42.8rem, 90%); */
+  max-width: 42.8rem;
   border-radius: 0.5rem;
   box-shadow: 0 2rem 5rem 0px rgba(0, 0, 0, 0.8);
   margin-top: -12rem;
@@ -62,6 +64,11 @@ h2 {
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 2.6rem;
+}
+
+.screen1 img {
+  width: 100%;
+  max-width: 25rem;
 }
 
 .screen1 img:hover {
@@ -89,6 +96,8 @@ h2 {
 
 .screen2 img {
   margin-bottom: 6rem;
+  width: 100%;
+  max-width: 30.1rem;
 }
 
 @keyframes vibrate-cookie {
