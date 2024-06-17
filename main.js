@@ -68,13 +68,16 @@ const phrases = [
 
 imgCookie.addEventListener("click", function () {
   const randomNumber = Math.round(Math.random() * (phrases.length - 1));
-  screen1.classList.toggle("hide");
-  screen2.classList.toggle("hide");
+  handleResetClick();
 
   screen2.querySelector("p").innerHTML = phrases[randomNumber];
 });
 
 btnReset.addEventListener("click", function () {
+  handleResetClick();
+});
+
+function handleResetClick() {
   screen1.classList.toggle("hide");
   screen2.classList.toggle("hide");
-});
+}
